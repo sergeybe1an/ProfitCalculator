@@ -81,7 +81,7 @@ public class CalculateDiffrence {
     }
 
     /**
-     * Функция для получения ключа для API
+     * Функция получения ключа для API
      * @return ключ для API
      */
     private String getAPIKey() {

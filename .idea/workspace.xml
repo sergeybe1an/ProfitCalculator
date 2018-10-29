@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="825c11fd-23a1-4d2f-9c6b-11d2375b2338" name="Default Changelist" comment="" />
+    <list default="true" id="825c11fd-23a1-4d2f-9c6b-11d2375b2338" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/CalculateDiffrence.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/CalculateDiffrence.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/ProfitCalculatorFrame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ProfitCalculatorFrame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalculateDiffrence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculateDiffrence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -26,30 +33,30 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="gradle" value="2" />
+          <entry key="gradle" value="3" />
           <entry key="java" value="7" />
-          <entry key="properties" value="2" />
+          <entry key="properties" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Groovy" value="2" />
+          <entry key="Groovy" value="3" />
           <entry key="JAVA" value="7" />
-          <entry key="Properties" value="2" />
+          <entry key="Properties" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="18" />
-          <entry key="java" value="4379" />
-          <entry key="properties" value="8" />
+          <entry key="java" value="4537" />
+          <entry key="properties" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="18" />
-          <entry key="JAVA" value="4379" />
-          <entry key="Properties" value="8" />
+          <entry key="JAVA" value="4537" />
+          <entry key="Properties" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.vcs.git.usages" />
@@ -57,24 +64,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="37" selection-start-column="37" selection-end-column="37" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="62" selection-start-line="14" selection-start-column="62" selection-end-line="14" selection-end-column="62" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -88,10 +77,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/settings.properties">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
+            <state relative-caret-position="-144">
+              <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -102,8 +100,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CalculateDiffrence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="735">
-              <caret line="49" selection-start-line="49" selection-end-line="49" />
+            <state relative-caret-position="615">
+              <caret line="68" column="53" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="53" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -127,6 +125,9 @@
     <dirStrings>
       <dir>$PROJECT_DIR$/src/main/java</dir>
     </dirStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
     <option name="myGradleHomes">
@@ -502,8 +503,8 @@
         <option value="$PROJECT_DIR$/src/app-settings.properties" />
         <option value="$PROJECT_DIR$/src/test/java/ApiUnitTest.java" />
         <option value="$PROJECT_DIR$/settings.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/CalculateDiffrence.java" />
         <option value="$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CalculateDiffrence.java" />
       </list>
     </option>
   </component>
@@ -512,6 +513,7 @@
     <option name="width" value="707" />
     <option name="height" value="695" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
@@ -543,7 +545,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540846550436" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540849234309" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -647,12 +649,12 @@
       <window_info anchor="bottom" id="Terminal" />
       <window_info anchor="bottom" id="Event Log" sideWeight="0.5006443" side_tool="true" weight="0.32956153" />
       <window_info anchor="bottom" id="Build" weight="0.32956153" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" />
       <window_info anchor="bottom" id="Messages" />
       <window_info anchor="bottom" id="Console" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49935567" visible="true" weight="0.32956153" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49935567" visible="true" weight="0.3314367" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -766,6 +768,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/settings.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="40" lean-forward="true" selection-start-column="40" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-144">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Application.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -776,27 +795,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="480">
-          <caret line="32" lean-forward="true" selection-start-line="32" selection-end-line="32" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/settings.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="40" selection-start-column="40" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CalculateDiffrence.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="735">
-          <caret line="49" selection-start-line="49" selection-end-line="49" />
+        <state relative-caret-position="615">
+          <caret line="68" column="53" selection-start-line="68" selection-start-column="53" selection-end-line="68" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

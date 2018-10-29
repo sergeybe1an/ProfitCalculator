@@ -5,7 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ProfitCalculatorFrame {
-    private final int FRAME_WIDTH = 280, FRAME_HEIGHT = 160;
+    private final int FRAME_WIDTH = 285, FRAME_HEIGHT = 190;
     private final String pattern = "yyyy-MM-dd";
     private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
     private final String prefix = "<html><body>", postfix = "</body></html>";
@@ -15,7 +15,6 @@ public class ProfitCalculatorFrame {
     private JSpinner timeSpinner;
     private JSpinner.DateEditor timeEditor;
     private JButton recalculateButton;
-    private SpringLayout springLayout = new SpringLayout();
 
     private String calculateResult;
 
@@ -43,7 +42,6 @@ public class ProfitCalculatorFrame {
         amountOfEurosLabel.setLabelFor(amountOfEurosTF);
 
         recalculateButton = new JButton("Расчитать");
-
         recalculateButton.addActionListener(e -> {
             try {
                 if (validateFields()) {

@@ -40,13 +40,13 @@ public class CalculateDiffrence {
             rateFromJSONCurrentDate = Double.parseDouble(jsonObjectCurrentDate.getJSONObject("rates").getString("RUB"));
             rateFromJSONCustomDate = Double.parseDouble(jsonObjectCustomDate.getJSONObject("rates").getString("RUB"));
 
-            rateFromJSONCurrentDate += rateFromJSONCurrentDate / 100 * 0.5;
+            rateFromJSONCurrentDate -= rateFromJSONCurrentDate / 100 * 0.5;
 
         } catch (NumberFormatException | NullPointerException | JSONException nfe) {
-            return "У полученных данных <br/>неверный формат или они отсутствуют";
+            return "У полученных данных неверный<br/> формат или они отсутствуют(возможно что-то с API-ключом)";
         }
 
-        double finalValue = eurosQuantity * (rateFromJSONCustomDate - rateFromJSONCurrentDate);
+        double finalValue = eurosQuantity * (rateFromJSONCurrentDate - rateFromJSONCustomDate);
 
         labelResult.append(finalValue < 0 ? "Вы потеряете " : "Вы выйдете в плюс ")
                    .append(String.format("%.2f", abs(finalValue)))
@@ -55,13 +55,18 @@ public class CalculateDiffrence {
         return labelResult.toString();
     }
 
+    /**
+     * @param url
+     * @return JSON-объект, результат запроса по API
+     * @throws Exception
+     */
     private JSONObject getJSON(String url) throws Exception {
         URL urlObj = new URL(url);
         StringBuilder response = new StringBuilder();
 
         HttpURLConnection connection = (HttpURLConnection) urlObj.openConnection();
         connection.setRequestMethod("GET");
-        connection.setRequestProperty("User-Agent", "Mozilla/5.0");
+        connection.setRequestProperty("User-Agent", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0");
 
         try (BufferedReader input = new BufferedReader(
                 new InputStreamReader(connection.getInputStream()))) {
@@ -75,6 +80,10 @@ public class CalculateDiffrence {
         return new JSONObject(response.toString());
     }
 
+    /**
+     * Функция для получения ключа для API
+     * @return ключ для API
+     */
     private String getAPIKey() {
         String key = "";
         String propName = "API_key";

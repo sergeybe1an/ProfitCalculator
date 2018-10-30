@@ -17,7 +17,7 @@ public class ApiUnitTest extends Assert {
             assertEquals(
                     ((JSONObject)method.invoke(
                             new CalculateDiffrence(555.0, "2016-10-10"),
-                            "http://data.fixer.io/api/2016-10-10?access_key=03e03fdf8f553197d3442534b28b9524&symbols=RUB")).getJSONObject("rates").get("RUB"),
+                            "http://data.fixer.io/api/2016-10-10?access_key=2e319526045774c54d937509b31d70e3&symbols=RUB")).getJSONObject("rates").get("RUB"),
                     actualCourseVal);
         } catch (Exception e) {
             e.printStackTrace();

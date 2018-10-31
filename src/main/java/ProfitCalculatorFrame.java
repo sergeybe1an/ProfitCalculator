@@ -1,14 +1,9 @@
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
-import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class ProfitCalculatorFrame {
-    private final int FRAME_WIDTH = 285, FRAME_HEIGHT = 190;
-    private final String pattern = "yyyy-MM-dd";
-    private final SimpleDateFormat simpleDateFormat = new SimpleDateFormat(pattern);
-    private final String prefix = "<html><body>", postfix = "</body></html>";
+public class ProfitCalculatorFrame implements Constants {
 
     private JLabel calculateResultLabel;
     private JTextField amountOfEurosTF;

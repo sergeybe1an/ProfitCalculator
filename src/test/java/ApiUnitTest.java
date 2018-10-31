@@ -6,6 +6,9 @@ import java.lang.reflect.Method;
 
 public class ApiUnitTest extends Assert {
 
+    /**
+     * Тест работоспособности API
+     */
     @Test
     public void testAPI() {
         Method method;

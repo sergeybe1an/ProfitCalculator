@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="825c11fd-23a1-4d2f-9c6b-11d2375b2338" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/ApiUnitTest.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/CalculateDiffrence.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/CalculateDiffrence.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ApiUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ApiUnitTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -25,38 +26,39 @@
     <session id="86656993">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="2" />
+          <entry key="project.closed" value="3" />
           <entry key="project.open.time.22" value="1" />
+          <entry key="project.open.time.24" value="1" />
           <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="3" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="gradle" value="3" />
-          <entry key="java" value="9" />
+          <entry key="java" value="11" />
           <entry key="properties" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Groovy" value="3" />
-          <entry key="JAVA" value="9" />
+          <entry key="JAVA" value="11" />
           <entry key="Properties" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="gradle" value="18" />
-          <entry key="java" value="4537" />
+          <entry key="java" value="4605" />
           <entry key="properties" value="11" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Groovy" value="18" />
-          <entry key="JAVA" value="4537" />
+          <entry key="JAVA" value="4605" />
           <entry key="Properties" value="11" />
         </counts>
       </usages-collector>
@@ -81,16 +83,16 @@
         <entry file="file://$PROJECT_DIR$/settings.properties">
           <provider selected="true" editor-type-id="text-editor">
             <state>
-              <caret column="22" selection-start-column="8" selection-end-column="40" />
+              <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/ApiUnitTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="19" column="108" selection-start-line="19" selection-start-column="108" selection-end-line="19" selection-end-column="108" />
+            <state relative-caret-position="150">
+              <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -98,8 +100,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1050">
-              <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
+            <state relative-caret-position="90">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -108,10 +110,19 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Constants.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="90">
+              <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CalculateDiffrence.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1230">
-              <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
+            <state relative-caret-position="156">
+              <caret line="42" column="73" lean-forward="true" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -134,6 +145,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -520,16 +532,16 @@
         <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/settings.gradle" />
         <option value="$PROJECT_DIR$/src/app-settings.properties" />
-        <option value="$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java" />
-        <option value="$PROJECT_DIR$/src/main/java/CalculateDiffrence.java" />
         <option value="$PROJECT_DIR$/settings.properties" />
         <option value="$PROJECT_DIR$/src/test/java/ApiUnitTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java" />
+        <option value="$PROJECT_DIR$/src/main/java/CalculateDiffrence.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="7">
-    <option name="x" value="660" />
-    <option name="y" value="249" />
+    <option name="x" value="342" />
     <option name="width" value="697" />
     <option name="height" value="694" />
   </component>
@@ -539,8 +551,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="AndroidView" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -587,11 +599,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540917431426" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540977726951" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -646,9 +658,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ApiUnitTest - 2018.10.29 at 22h 28m 03s.xml">
-      <configuration name="ApiUnitTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ApiUnitTest - 2018.10.29 at 22h 28m 33s.xml">
       <configuration name="ApiUnitTest" configurationId="JUnit" />
     </history-entry>
@@ -676,12 +685,15 @@
     <history-entry file="ApiUnitTest - 2018.10.29 at 22h 44m 16s.xml">
       <configuration name="ApiUnitTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ApiUnitTest - 2018.10.30 at 19h 37m 17s.xml">
+      <configuration name="ApiUnitTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1600" height="864" extended-state="6" />
+    <frame x="318" y="562" width="697" height="694" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25773194" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.42121685" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -693,7 +705,7 @@
       <window_info id="Job Explorer" order="9" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49935567" weight="0.3431517" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49935567" weight="0.4734774" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39886847" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -795,16 +807,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/CalculateDiffrence.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1230">
-          <caret line="90" column="18" selection-start-line="90" selection-start-column="18" selection-end-line="90" selection-end-column="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/PrivatePlace/soft/jdk1.8.0_181/src.zip!/java/io/InputStream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
@@ -812,13 +814,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java">
+    <entry file="file://$PROJECT_DIR$/settings.properties">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1050">
-          <caret line="70" column="19" selection-start-line="70" selection-start-column="19" selection-end-line="70" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state>
+          <caret column="26" lean-forward="true" selection-start-column="26" selection-end-column="26" />
         </state>
       </provider>
     </entry>
@@ -832,17 +831,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.properties">
+    <entry file="file://$PROJECT_DIR$/src/test/java/ApiUnitTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="22" selection-start-column="8" selection-end-column="40" />
+        <state relative-caret-position="150">
+          <caret line="14" column="13" lean-forward="true" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ApiUnitTest.java">
+    <entry file="jar://$USER_HOME$/PrivatePlace/soft/jdk1.8.0_181/src.zip!/java/awt/event/ActionListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="19" column="108" selection-start-line="19" selection-start-column="108" selection-end-line="19" selection-end-column="108" />
+        <state relative-caret-position="390">
+          <caret line="49" column="16" selection-start-line="49" selection-start-column="16" selection-end-line="49" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ProfitCalculatorFrame.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="10" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/CalculateDiffrence.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="156">
+          <caret line="42" column="73" lean-forward="true" selection-start-line="42" selection-start-column="73" selection-end-line="42" selection-end-column="73" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

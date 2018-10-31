@@ -1,3 +1,4 @@
+import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.*;
@@ -38,15 +39,12 @@ public class CalculateDiffrence {
             rateFromJSONCurrentDate = new BigDecimal(jsonObjectCurrentDate.getJSONObject("rates").getString("RUB"));
             rateFromJSONCustomDate = new BigDecimal(jsonObjectCustomDate.getJSONObject("rates").getString("RUB"));
 
-//            rateFromJSONCurrentDate = new BigDecimal("100");
-//            rateFromJSONCustomDate = new BigDecimal("100");
-
             rateFromJSONCurrentDate =
                             rateFromJSONCustomDate
                             .subtract(rateFromJSONCurrentDate.divide(new BigDecimal("100"))
                             .multiply(new BigDecimal("0.5")));
 
-        } catch (NumberFormatException | NullPointerException /*| JSONException*/ nfe) {
+        } catch (NumberFormatException | NullPointerException | JSONException nfe) {
             return "У полученных данных неверный<br/> формат или они отсутствуют(возможно что-то с API-ключом)";
         }
 

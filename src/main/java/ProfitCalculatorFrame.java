@@ -1,6 +1,7 @@
 import net.miginfocom.swing.MigLayout;
 
 import javax.swing.*;
+import java.math.BigDecimal;
 import java.util.Date;
 
 public class ProfitCalculatorFrame implements Constants {
@@ -41,7 +42,7 @@ public class ProfitCalculatorFrame implements Constants {
             try {
                 if (validateFields()) {
                     String partOfURLwithDate = simpleDateFormat.format(timeSpinner.getValue());
-                    double amountOfEuros = Double.parseDouble(amountOfEurosTF.getText());
+                    BigDecimal amountOfEuros = new BigDecimal(amountOfEurosTF.getText());
 
                     calculateResult = new CalculateDiffrence(amountOfEuros, partOfURLwithDate).getCalculateResult();
                     calculateResultLabel.setText(prefix + calculateResult + postfix);
@@ -67,12 +68,16 @@ public class ProfitCalculatorFrame implements Constants {
         String errors = "";
 
         try {
-            Double.parseDouble(amountOfEurosTF.getText());
+            BigDecimal.valueOf(Double.parseDouble(amountOfEurosTF.getText()));
         } catch (NumberFormatException nfe) {
             errors += "Кол-во евро не указано или<br/> формат неверный<br/>";
         }
 
-        calculateResultLabel.setText(prefix + errors + postfix);
-        return errors.isEmpty() ? true : false;
+        if (errors.isEmpty()) {
+            return true;
+        } else {
+            calculateResultLabel.setText(prefix + errors + postfix);
+            return false;
+        }
     }
 }

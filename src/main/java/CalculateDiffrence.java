@@ -1,20 +1,18 @@
-import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.io.*;
+import java.math.BigDecimal;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Properties;
 
-import static java.lang.Math.*;
-
 public class CalculateDiffrence {
 
-    private double eurosQuantity;
+    private BigDecimal eurosQuantity;
     private String partOfURLwithDate;
     private String apiKey;
 
-    public CalculateDiffrence(double eurosQuantity, String partOfURLwithDate) {
+    public CalculateDiffrence(BigDecimal eurosQuantity, String partOfURLwithDate) {
         this.eurosQuantity = eurosQuantity;
         this.partOfURLwithDate = partOfURLwithDate;
 
@@ -34,22 +32,28 @@ public class CalculateDiffrence {
         System.out.println(jsonObjectCustomDate + " " + urlCurrentDate + " " + eurosQuantity + " " + partOfURLwithDate);
         System.out.println(jsonObjectCurrentDate);
 
-        double rateFromJSONCurrentDate;
-        double rateFromJSONCustomDate;
+        BigDecimal rateFromJSONCurrentDate;
+        BigDecimal rateFromJSONCustomDate;
         try {
-            rateFromJSONCurrentDate = Double.parseDouble(jsonObjectCurrentDate.getJSONObject("rates").getString("RUB"));
-            rateFromJSONCustomDate = Double.parseDouble(jsonObjectCustomDate.getJSONObject("rates").getString("RUB"));
+            rateFromJSONCurrentDate = new BigDecimal(jsonObjectCurrentDate.getJSONObject("rates").getString("RUB"));
+            rateFromJSONCustomDate = new BigDecimal(jsonObjectCustomDate.getJSONObject("rates").getString("RUB"));
 
-            rateFromJSONCurrentDate -= rateFromJSONCurrentDate / 100 * 0.5;
+//            rateFromJSONCurrentDate = new BigDecimal("100");
+//            rateFromJSONCustomDate = new BigDecimal("100");
 
-        } catch (NumberFormatException | NullPointerException | JSONException nfe) {
+            rateFromJSONCurrentDate =
+                            rateFromJSONCustomDate
+                            .subtract(rateFromJSONCurrentDate.divide(new BigDecimal("100"))
+                            .multiply(new BigDecimal("0.5")));
+
+        } catch (NumberFormatException | NullPointerException /*| JSONException*/ nfe) {
             return "У полученных данных неверный<br/> формат или они отсутствуют(возможно что-то с API-ключом)";
         }
 
-        double finalValue = eurosQuantity * (rateFromJSONCurrentDate - rateFromJSONCustomDate);
+        BigDecimal finalValue = (rateFromJSONCurrentDate.subtract(rateFromJSONCustomDate)).multiply(eurosQuantity);
 
-        labelResult.append(finalValue < 0 ? "Вы потеряете " : "Вы выйдете в плюс ")
-                   .append(String.format("%.2f", abs(finalValue)))
+        labelResult.append(finalValue.compareTo(BigDecimal.ZERO) < 0 ? "Вы потеряете " : "Вы выйдете в плюс ")
+                   .append(finalValue.setScale(2, BigDecimal.ROUND_HALF_DOWN).abs().toString())
                    .append(" рублей");
 
         return labelResult.toString();
@@ -69,7 +73,8 @@ public class CalculateDiffrence {
         connection.setRequestProperty("User-Agent", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:61.0) Gecko/20100101 Firefox/61.0");
 
         try(BufferedReader input = new BufferedReader(
-                new InputStreamReader(connection.getInputStream()))) {
+                                   new InputStreamReader(
+                                   connection.getInputStream()))) {
 
             String currentLine;
             while ((currentLine = input.readLine()) != null) {
